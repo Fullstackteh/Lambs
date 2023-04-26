@@ -92,10 +92,13 @@ body {
   }
   
   footer {
-    background-color: #000;
+    background-color: black;
+    color: white;
     padding: 20px;
     text-align: center;
-    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
   header img {
     display: block;
