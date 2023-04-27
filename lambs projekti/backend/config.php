@@ -1,7 +1,7 @@
 <?php
 try{
 $palvelin = "localhost";
-$tietokanta = "harjoitus4";
+$tietokanta = "lambs";
 $tunnus = "root";
 $salasana = "";
 
