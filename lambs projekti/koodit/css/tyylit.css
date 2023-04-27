@@ -36,20 +36,30 @@ body {
   }
 
   .hero {
+    background-image: url("https://example.com/hero-image.jpg");
     background-size: cover;
     background-position: center;
     text-align: center;
     padding: 100px 0;
   }
   
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
   .hero h1 {
     font-size: 48px;
     margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 0 #000;
   }
   
   .hero p {
     font-size: 18px;
     margin: 20px 0;
+    color: #fff;
   }
   
   .btn {
