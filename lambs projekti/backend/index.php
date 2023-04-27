@@ -9,6 +9,7 @@ if(isset($_SESSION['kayttajatunnus'])){
 
   if(isset($_POST['submit'])){
     if($_POST['kayttajatunnus'] == '' OR $_POST['password'] == ''){
+    if($_POST['kayttajatunnus'] == '' OR $_POST['password'] == ''){
       echo "Täytä kaikki tarvittavat tiedot!";
     } else {
       $kayttajatunnus = $_POST['kayttajatunnus'];
