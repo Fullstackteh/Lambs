@@ -3,25 +3,25 @@
 <?php require "config.php"; ?>
 
 <?php
-if(isset($_SESSION['kaytttajatunnus'])){
+if(isset($_SESSION['kayttajatunnus'])){
   header("location: index.php");
 }
 
   if(isset($_POST['submit'])){
-    if($_POST['kaytttajatunnus'] == '' OR $_POST['password'] == ''){
+    if($_POST['kayttajatunnus'] == '' OR $_POST['password'] == ''){
       echo "Täytä kaikki tarvittavat tiedot!";
     } else {
-      $sposti = $_POST['kaytttajatunnus'];
+      $kayttaja = $_POST['kayttajatunnus'];
       $salasana = $_POST['password'];
 
-      $komento = "SELECT * FROM user WHERE kayttajatunnus = '$kaytttajatunnus'";
+      $komento = "SELECT * FROM user WHERE kayttajatunnus = '$kayttaja'";
       $kirjaudu = $yhteys->query($komento);
       $kirjaudu->execute();
       $data = $kirjaudu->fetch(PDO::FETCH_ASSOC);
       if($kirjaudu->rowCount() > 0){
         if(password_verify($salasana, $data['salasana'])){
           //echo "Olet kirjautunut";
-          $_SESSION['kaytttajatunnus'] = $data['kaytttajatunnus'];
+          $_SESSION['kayttajatunnus'] = $data['kayttajatunnus'];
           header("location: index.php");
 
         } else {
