@@ -33,6 +33,7 @@ if(isset($_SESSION['kayttajatunnus'])){
       } 
     }
   }
+} 
 ?>
 
 
@@ -54,4 +55,3 @@ if(isset($_SESSION['kayttajatunnus'])){
   </form>
 </main>
 <?php require "includes/footer.php"; ?>
-
