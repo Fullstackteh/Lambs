@@ -1,3 +1,6 @@
+<?php require "includes/header.php"; ?>
+<?php require "config.php"; ?>
+
 <!DOCTYPE html>
 <html>
     <head>
