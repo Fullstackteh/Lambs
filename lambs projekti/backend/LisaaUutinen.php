@@ -1,6 +1,6 @@
 <?php
 
-require "connect.php";
+require "config.php";
 
 if(isset($_POST['talleta'])){
     $otsikko=$_POST['otsikko'];

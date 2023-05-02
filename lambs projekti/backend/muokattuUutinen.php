@@ -27,5 +27,5 @@ if(isset($_POST['talleta'])){
     echo "ID: " . $uutisetid . "<br>";
 
 }
-//header("location:index.php");
+header("location:uutiset.php");
 ?>

@@ -1,5 +1,5 @@
 <?php
-    require "connect.php";
+    require "config.php";
 
     if(isset($_GET['Id'])){
         $uutisetid = $_GET['Id'];

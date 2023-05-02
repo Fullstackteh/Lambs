@@ -1,7 +1,7 @@
 <?php
     header("Access-Control-Allow-Origin: *");
 
-    include('connect.php');
+    include('config.php');
 
     $kysely="SELECT uutisetID, otsikko, uutinen FROM uutisetID";
     $data = $yhteys->query($kysely);
