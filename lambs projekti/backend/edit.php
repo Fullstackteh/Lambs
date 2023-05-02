@@ -1,2 +1,3 @@
-<?php require "includes/header.php"; ?>
-<?php require "config.php"; ?>
+require "includes/header.php";
+require "config.php";
+<?php
