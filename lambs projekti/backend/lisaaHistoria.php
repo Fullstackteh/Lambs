@@ -12,5 +12,5 @@ if(isset($_POST['talleta'])){
     $lisaa->bindValue(':historia', $historia, PDO::PARAM_STR);
     $lisaa->execute();
 }
-header("location:index.php");
+header("location:historia.php");
 ?>

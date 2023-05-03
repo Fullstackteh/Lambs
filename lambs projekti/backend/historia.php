@@ -10,16 +10,15 @@
 <body>
    <div class="container">
         <br>
-      <h1>Uutiset</h1>
-      <h3>Kaikki uutiset</h3>
-      <p><a href="UusiHistoria.php" class="btn btn-primary">Lisää uutinen</a></p>
+      <h1>Historia</h1>
+      <h3>Kaikki historia</h3>
+      <p><a href="UusiHistoria.php" class="btn btn-primary">Lisää historia</a></p>
 
 
       <table class="table table-striped">
         <thead>
           <tr>
-             <th>Otsikko</th>
-             <th>Uutinen</th>
+             <th>Historia</th>
              <th>ID</th>
           </tr>
         </thead>
@@ -47,5 +46,4 @@
           ?>
         </tbody>
       </table>
-
 

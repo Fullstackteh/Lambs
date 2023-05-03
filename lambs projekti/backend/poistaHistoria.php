@@ -5,8 +5,8 @@
         $historiaid = $_GET['Id'];
         $kysely = "DELETE FROM historiaid WHERE historiaid=:Id";
         $poista = $yhteys->prepare($kysely);
-        $poista->bindvalue('Id', $uutisetid, PDO::PARAM_STR);
+        $poista->bindvalue('Id', $historiaid, PDO::PARAM_STR);
         $poista->execute();
     }
-    header("location: index.php")
+    header("location: historia.php")
 ?>

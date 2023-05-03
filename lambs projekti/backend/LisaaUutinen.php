@@ -14,5 +14,5 @@ if(isset($_POST['talleta'])){
     $lisaa->bindValue(':uutinen', $teksti, PDO::PARAM_STR);
     $lisaa->execute();
 }
-header("location:index.php");
+header("location:uutinen.php");
 ?>
