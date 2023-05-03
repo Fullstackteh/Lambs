@@ -15,7 +15,7 @@
         <table class="table-bordered">
             <form action="lisaaHistoria.php" method="POST">
                 <tr>
-                    <td>Otsikko</td>
+                    <td>Historia</td>
                     <td><input type="text" name="historia" required></td>
                 </tr>
                 

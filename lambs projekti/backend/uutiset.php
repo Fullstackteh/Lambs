@@ -21,6 +21,8 @@
              <th>Otsikko</th>
              <th>Uutinen</th>
              <th>ID</th>
+             <th></th>
+             <th></th>
           </tr>
         </thead>
         <tbody>

@@ -20,6 +20,8 @@
           <tr>
              <th>Historia</th>
              <th>ID</th>
+             <th></th>
+             <th></th>
           </tr>
         </thead>
         <tbody>

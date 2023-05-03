@@ -15,9 +15,18 @@
         <h3>Muokkaa historiaa</h3>
         <table class="table-bordered">
             <form action="muokattuHistoria.php" method="POST">
+
+            <?php
+                    $kysely = $yhteys->prepare("SELECT * FROM historiaid WHERE historiaid= :Id");
+                    $kysely->bindValue(":Id", $_GET['Id']);
+                    $kysely->execute();
+                    $rivi = $kysely->fetch(PDO::FETCH_ASSOC);
+                ?>
+
+
                 <tr>
-                    <td>Otsikko</td>
-                    <td><input type="text" name="historia" required></td>
+                    <td>Historia</td>
+                    <td><input type="text" name="historia" required value="<?php echo ($rivi['historia']); ?>"> </td>
                 </tr>
 
                
