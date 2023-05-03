@@ -27,6 +27,9 @@
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container">
     <a class="navbar-brand" href="#">Lambs jäsenten muokkausjärjestelmä</a>
+    <a href="javascript:history.back()" class="btn btn-primary m-2">Edellinen</a> 
+    <a href="index.php" class="btn btn-primary m-2">Päävalikko</a>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
