@@ -30,10 +30,33 @@
             <li><a href="https://www.youtube.com/playlist?list=PL437A552EBAAB6DA8"><i class="fab fa-youtube"></i></a></li>
           </ul>
         </nav>
-    <div class="row">
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/lambsrnr&tabs=timeline&width=500&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
       </header>
-        
+      <div class="facebook-kontti">
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/lambsrnr&tabs=timeline&width=500&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+      </div>
+      <div id="news-container"></div>
+      <script>
+        fetch('http://localhost/lambsprojekti/backend/haeUutinen.php')
+          .then(response => response.json())
+          .then(data => {
+            const newsContainer = document.getElementById('news-container');
+            const newsItems = data.uutinen;
+            for (let i = 0; i < newsItems.length; i++) {
+              const newsItem = newsItems[i];
+              const newsElement = document.createElement('div');
+              newsElement.className = 'news-item'; // add class name here
+              newsElement.innerHTML = `
+                <h2>${newsItem.Otsikko}</h2>
+                <p>${newsItem.Uutinen}</p>
+              `;
+              newsContainer.appendChild(newsElement);
+            }
+          })
+          .catch(error => {
+            console.error('Error fetching data:', error);
+          });
+      </script>
+      
       <footer class="footer bg-dark text-white">
         <div class="container">
           <div class="row">
@@ -50,3 +73,4 @@
         </div>
       </footer>    
 </body>
+</html>

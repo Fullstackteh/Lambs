@@ -32,10 +32,31 @@
         </nav>
     <div class="row">
       </header>
-      <section class="hero">
-        <h1>Gig calendar</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </section>
+
+      <div id="gigs-container"></div>
+      <script>
+        fetch('http://localhost/lambsprojekti/backend/haeKeikka.php')
+          .then(response => response.json())
+          .then(data => {
+            const gigsContainer = document.getElementById('gigs-container');
+            const gigs = data.keikka;
+            for (let i = 0; i < gigs.length; i++) {
+              const gig = gigs[i];
+              const gigElement = document.createElement('div');
+              gigElement.className = 'gig-item'; 
+              gigElement.innerHTML = `
+                <h2>${gig.Pvm} ${gig.Klo}</h2>
+                <p>${gig.Paikka}, ${gig.Paikkakunta}</p>
+              `;
+              gigsContainer.appendChild(gigElement);
+            }
+          })
+          .catch(error => {
+            console.error('Virhe tietojen haussa:', error);
+          });
+      </script>
+      
+
       <section class="iframe-section">
       </div>
       <div class="row">

@@ -17,11 +17,11 @@
 
     }
 
-        $JSON.=']}';
-        $yhteys = null;
+    $JSON.=']}';
+    $yhteys = null;
 
-        $handler = fopen("data.json", "w");
-        fwrite($handler, $JSON);
-        fclose($handler);
+    $handler = fopen("uutiset.json", "w"); 
+    fwrite($handler, $JSON);
+    fclose($handler);
 
 ?>
