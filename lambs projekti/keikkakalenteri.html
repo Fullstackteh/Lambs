@@ -38,29 +38,66 @@
         </nav>
     <div class="row">
       </header>
+      
 
-      <div id="gigs-container"></div>
+      <div id="gigs-container">
+        <div class="gig-group">
+          <h2>Date</h2>
+        </div>
+        <div class="gig-group">
+          <h2>Times</h2>
+        </div>
+        <div class="gig-group">
+          <h2>Location</h2>
+        </div>
+        <div class="gig-group">
+          <h2>City</h2>
+        </div>
+      </div>
+      
       <script>
         fetch('http://localhost/lambsprojekti/backend/haeKeikka.php')
           .then(response => response.json())
           .then(data => {
-            const gigsContainer = document.getElementById('gigs-container');
+            const datesGroup = document.querySelector('.gig-group:nth-of-type(1)');
+            const timesGroup = document.querySelector('.gig-group:nth-of-type(2)');
+            const locationsGroup = document.querySelector('.gig-group:nth-of-type(3)');
+            const citiesGroup = document.querySelector('.gig-group:nth-of-type(4)');
+      
             const gigs = data.keikka;
             for (let i = 0; i < gigs.length; i++) {
               const gig = gigs[i];
-              const gigElement = document.createElement('div');
-              gigElement.className = 'gig-item'; 
-              gigElement.innerHTML = `
-                <h2>${gig.Pvm} ${gig.Klo}</h2>
-                <p>${gig.Paikka}, ${gig.Paikkakunta}</p>
-              `;
-              gigsContainer.appendChild(gigElement);
+      
+             
+              const dateElement = document.createElement('div');
+              const timeElement = document.createElement('div');
+              const locationElement = document.createElement('div');
+              const cityElement = document.createElement('div');
+      
+          
+              dateElement.className = 'date';
+              timeElement.className = 'time';
+              locationElement.className = 'location';
+              cityElement.className = 'city';
+      
+           
+              dateElement.innerHTML = gig.Pvm;
+              timeElement.innerHTML = gig.Klo;
+              locationElement.innerHTML = gig.Paikka;
+              cityElement.innerHTML = gig.Paikkakunta;
+      
+             
+              datesGroup.appendChild(dateElement);
+              timesGroup.appendChild(timeElement);
+              locationsGroup.appendChild(locationElement);
+              citiesGroup.appendChild(cityElement);
             }
           })
           .catch(error => {
             console.error('Virhe tietojen haussa:', error);
           });
       </script>
+      
       
 
       <section class="iframe-section">
