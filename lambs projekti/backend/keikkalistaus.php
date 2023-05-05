@@ -3,7 +3,8 @@
 
     include('config.php');
 
-    $kysely="SELECT KeikkakalenteriID, paivamaara, paikkakunta, paikka, kellonaika FROM KeikkakalenteriID";
+    $kysely="SELECT KeikkakalenteriID, DATE_FORMAT(paivamaara, '%d.%m.%Y') AS paivamaara, paikkakunta, paikka, TIME_FORMAT(kellonaika, '%H:%i') AS kellonaika FROM KeikkakalenteriID ORDER BY paivamaara";
+
     $data = $yhteys->query($kysely);
 
     $JSON = '{"keikka":[';
