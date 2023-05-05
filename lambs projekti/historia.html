@@ -38,12 +38,28 @@
     <div class="row">
       </header>
 
-      <section class="hero">
-        <div class="container">
-            
-        </div>
-        </section>
 
+      <div class="hero" id="history-container"></div>
+      <script>
+        fetch('http://localhost/lambsprojekti/backend/haeHistoria.php')
+          .then(response => response.json())
+          .then(data => {
+            const historyContainer = document.getElementById('history-container');
+            const history = data.historia;
+            for (let i = 0; i < history.length; i++) {
+              const item = history[i];
+              const itemElement = document.createElement('div');
+              itemElement.className = 'history-item';
+              itemElement.innerHTML = `
+                <p>${item.historia}</p>
+              `;
+              historyContainer.appendChild(itemElement);
+            }
+          })
+          .catch(error => {
+            console.error('Virhe tietojen haussa:', error);
+          });
+      </script>
 </body>
 
 

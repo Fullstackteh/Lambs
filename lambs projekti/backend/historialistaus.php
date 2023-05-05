@@ -20,7 +20,7 @@
         $JSON.=']}';
         $yhteys = null;
 
-        $handler = fopen("data.json", "w");
+        $handler = fopen("historia.json", "w");
         fwrite($handler, $JSON);
         fclose($handler);
 
