@@ -36,65 +36,38 @@
         <h1>Material from the gigs</h1>
        
         <!-- <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/lambsrnr&tabs=timeline&width=500&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe> -->
-      </section>
-      <section class="hero">
-      <h1> Seinäjoki 2008</h1>
-      </section>
-      <div class="row">
-        
-          <div class="col-1 "></div>
-          <div class="col-1 "></div>
-          <img src="img/Lambs_Seinajoki1.JPG" alt="Kuva 1">
-          <div class="col-1 "></div>
-          <img src="img/Lambs_Seinajoki2.JPG" alt="Kuva 2">
-          
-        </div>
-        <br>
-        <div class="row">
-          <div class="col-1 "></div>
-          <img src="img/Lambs_Seinajoki3.JPG" alt="Kuva 3">
-          <div class="col-1 "></div>
-          <img src="img/Lambs_Seinajoki4.JPG" alt="Kuva 4">
-        </div>
-        <br>
-        <br>
+      </section> </div>
 
-        <section class="hero">
-          <h1> The band itself</h1>
-          </section>
-        
-          <div class="col-1 "></div>
-          <img src="img/ryhmakuva1.jpg" alt="Kuva 5">
-          <div class="col-1 "></div>
-          <img src="img/ryhmakuva2.jpg" alt="Kuva 6">
-        </div>
-        
-        <!-- <div class="box"> -->
-          <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-          <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-          
-         </div>-->
-      </div>
-      <br><br>
+
+    <div class="kuvat" id="images">
+       <?php 
+       $target_dir = "backend/kuvat/";
+       $valid_extensions = array("jpg", "jpeg", "png", "gif");
+
+       $files = glob($target_dir . "*.{jpg,jpeg,png,gif}", GLOB_BRACE);
+       foreach ($files as $file) {
+          $filename = basename($file);
+          $imageFileType = strtolower(pathinfo($file, PATHINFO_EXTENSION));
+           if (in_array($imageFileType, $valid_extensions)) {
+           echo "<a href='$target_dir$filename'><img src='$target_dir$filename' width='200' height='200'></a>";
+          }
+         }
+       ?>
+    </div>
+ 
+      
       <section class="iframe-section">
       </div>
-
-      <form action="/backend/upload.php" method="post" enctype="multipart/form-data">
-        Select image to upload:
-        <input type="file" name="fileToUpload" id="fileToUpload">
-        <input type="submit" value="Upload Image" name="submit">
-      </form>
-      
       <div class="row">
         <div class="col-1 "></div>
         <div class="col-1 "></div>
         <div class="col-4 "> <p>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL437A552EBAAB6DA8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </p></div>
-        <div class="col-1 "></div>
         <div class="col-4 "><p>
           <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/5J3AcDsarvqsLXoIOdc80i?utm_source=generator" width="560" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       </p></div>
+        <div class="col-1 "></div>
         <div class="col-1 "></div>
       </section>
       <footer class="footer bg-dark text-white">

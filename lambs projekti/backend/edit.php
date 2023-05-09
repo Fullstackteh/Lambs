@@ -7,5 +7,6 @@
     <a href="keikkakalenteri.php" class="btn btn-primary m-1">Keikat</a>
     <a href="historia.php" class="btn btn-primary m-1">Historia</a>
     <a href="media.php" class="btn btn-primary m-1">Media</a>
+    <a href="kuvat.php" class="btn btn-primary m-1">Kuvat</a>
   </div>
 </div>
