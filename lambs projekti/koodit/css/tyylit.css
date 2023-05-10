@@ -270,4 +270,137 @@ body {
   z-index: -1;
   margin-bottom: 500px;
 }
+.tuotanto {
+  background-color:  #1c1c1c;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.tuotanto h3 {
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.tuotanto p {
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.tuotanto ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.tuotanto li {
+  background-color: #1c1c1c;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.tuotanto .listaotsikko {
+  font-size: 24px;
+  color: #ffffff;
+  margin: 20px 0;
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+.tuotanto li:nth-child(odd) {
+  background-color:  #1c1c1c;
+}
+
+.tuotanto li h3 {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.tuotanto li p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.tuotanto .btn {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+  background-color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.tuotanto .btn:hover {
+  background-color: #666;
+}
+
+.linkki {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.linkki:hover {
+  background-color: #666;
+}
+
+.bandi-kuva {
+  display: block;
+  margin: 0 auto;
+  margin-top: -50px;
+  margin-bottom: 50px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.tietoa {
+  background-color: #1c1c1c;
+  padding: 50px;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.tietoa h1 {
+  font-size: 42px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-transform: uppercase; 
+}
+
+.tietoa p {
+  font-size: 22px;
+  color: #ffffff;
+  line-height: 1.7em;
+  margin-bottom: 20px;
+  text-align: justify; 
+  padding: 0 50px; 
+}
 
