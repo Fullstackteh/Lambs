@@ -27,8 +27,9 @@
                     <td><input type="text" name="otsikko" required value="<?php echo ($rivi['otsikko']); ?>"></td>
                 </tr>
                 <tr>
-                    <td>Uutinen</td>
-                    <td><input  style="width: 1000px; height: 500px;" type="text" name="uutinen" value="<?php echo ($rivi['uutinen']); ?>"></td>
+                <td>Uutinen</td>
+                <td><textarea style="width: 1000px; height: 500px;" name="uutinen"><?php echo $rivi['uutinen']; ?></textarea></td>
+
                 </tr>
                
     <input type="hidden" name="Id" value="<?php echo $_GET['Id']; ?>"></td>
