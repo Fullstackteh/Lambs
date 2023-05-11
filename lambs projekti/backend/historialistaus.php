@@ -11,7 +11,8 @@
     $riveja = $data->rowCount();
     while($rivi = $data->fetch(PDO::FETCH_ASSOC)){
         $laskuri++;
-        $JSON .= '{"Id":"' . $rivi['historiaid'] . '","historia":"' . $rivi['historia'] . '"}';
+        $historia = str_replace(PHP_EOL, '<br>', $rivi['historia']);
+        $JSON .= '{"Id":"' . $rivi['historiaid'] . '","historia":"' . $historia . '"}';
 
         if($laskuri<$riveja) $JSON.=",";
 
