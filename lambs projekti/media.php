@@ -12,7 +12,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="koodit/css/tyylit.css">    
+    <link rel="stylesheet" href="koodit/css/tyylit.css">
+    
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">    
 </head>
 
 <body>
@@ -23,7 +29,7 @@
             <li><a href="index.html">Front page</a></li>
             <li><a href="keikkakalenteri.html">Gigs</a></li>
             <li><a href="uutiset.html">News</a></li>
-            <li><a href="media.html">Media</a></li>
+            <li><a href="media.php">Media</a></li>
             <li><a href="https://www.facebook.com/lambsrnr/">Contact</a></li>
             <li><a href="https://www.facebook.com/lambsrnr/"><i class="fab fa-facebook-f"></i></a></li>
             <li><a href="https://open.spotify.com/artist/5J3AcDsarvqsLXoIOdc80i?go=1&sp_cid=99263ed66ce7023966c77560bd58a3b1&utm_source=embed_player_p&utm_medium=desktop&nd=1"><i class="fab fa-spotify"></i></a></li>
