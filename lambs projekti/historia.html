@@ -38,8 +38,9 @@
     <div class="row">
       </header>
 
-
+      
       <div class="hero" id="history-container"></div>
+      
       <script>
         fetch('http://localhost/lambsprojekti/backend/haeHistoria.php')
           .then(response => response.json())
@@ -51,7 +52,8 @@
               const itemElement = document.createElement('div');
               itemElement.className = 'history-item';
               itemElement.innerHTML = `
-                <p>${item.historia}</p>
+              <h1>Historia</h1>
+              <p>${item.historia}</p>
               `;
               historyContainer.appendChild(itemElement);
             }
