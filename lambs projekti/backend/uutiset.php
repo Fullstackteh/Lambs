@@ -39,8 +39,8 @@
                     <td> <?php echo $uutinen['Uutinen']; ?> </td>
                     <td> <?php echo $uutinen['Id']; ?> </td>
 
-                    <td> <?php echo '<a href="muokkaaUutinen.php?Id='.$uutinen['Id'].'" class="btn btn-primary">Muokkaa</a>'; ?></td>
-                    <td> <?php echo '<a href="poistaUutinen.php?Id='.$uutinen['Id'].'" class="btn btn-primary">Poista</a>'; ?></td>
+                    <td> <?php echo '<a href="muokkaaUutinen.php?Id='.$uutinen['Id'].'" class="btn btn-dark">Muokkaa</a>'; ?></td>
+                    <td> <?php echo '<a href="poistaUutinen.php?Id='.$uutinen['Id'].'" class="btn btn-danger">Poista</a>'; ?></td>
                   </tr>
                   <?php
                 }
