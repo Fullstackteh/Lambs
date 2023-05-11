@@ -11,7 +11,8 @@
     $riveja = $data->rowCount();
     while($rivi = $data->fetch(PDO::FETCH_ASSOC)){
         $laskuri++;
-        $JSON .= '{"Id":"' . $rivi['uutisetID'] . '","Otsikko":"' . $rivi['otsikko'] . '","Uutinen":"' . $rivi['uutinen'] . '"}';
+        $uutinen = str_replace(PHP_EOL, '<br>', $rivi['uutinen']);
+        $JSON .= '{"Id":"' . $rivi['uutisetID'] . '","Otsikko":"' . $rivi['otsikko'] . '","Uutinen":"' . $uutinen . '"}';
 
         if($laskuri<$riveja) $JSON.=",";
 
@@ -23,5 +24,4 @@
     $handler = fopen("uutiset.json", "w"); 
     fwrite($handler, $JSON);
     fclose($handler);
-
 ?>
