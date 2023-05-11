@@ -24,6 +24,18 @@
     <header>
         <a href="#"><img src="img/logo.jpg" alt="lambs"></a>
         <nav>
+            <script>
+            $(window).scroll(function() {
+              var header = $("header");
+              var scroll = $(window).scrollTop();
+            
+              if (scroll >= 150) {
+                header.addClass("sticky-header");
+              } else {
+                header.removeClass("sticky-header");
+              }
+            });
+          </script>
           <ul>
             <li><a href="index.html">Front page</a></li>
             <li><a href="keikkakalenteri.html">Gigs</a></li>
@@ -99,7 +111,7 @@
 
           <h3>You can buy merchandise from our gigs!</h3>
         
-        <a href="https://populappi.rovaniemi.fi/bands/view/99" class="btn">Learn more</a>
+        <a href="https://populappi.rovaniemi.fi/bands/view/99" class="btn1">Learn more</a>
       </div>
       </div>
 
