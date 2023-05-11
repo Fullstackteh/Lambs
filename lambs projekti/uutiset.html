@@ -37,9 +37,7 @@
           </ul>
         </nav>
       </header>
-      <div class="facebook-kontti">
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/lambsrnr&tabs=timeline&width=500&height=300&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-      </div>
+
       <div id="news-container"></div>
       <script>
         fetch('http://localhost/lambsprojekti/backend/haeUutinen.php')
@@ -62,7 +60,12 @@
             console.error('Error fetching data:', error);
           });
       </script>
-      
+
+      <div class="facebook-kontti">
+        <h3>FACEBOOK</h3>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/lambsrnr&tabs=timeline&width=500&height=1000&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="1000" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+      </div>
+
       <footer class="footer bg-dark text-white">
         <div class="container">
           <div class="row">
