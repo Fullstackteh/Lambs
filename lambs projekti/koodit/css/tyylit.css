@@ -167,25 +167,52 @@ body {
   }
 
   .news-item {
-    width: 400px;
-    margin: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
-    background-color: #f7f7f7;
+    background-color: #b8b8b8;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    text-align: center;
-  }
-
-  .news-item h2 {
-    font-size: 24px;
+    text-align: left;
+    position: relative;
+    
+    }
+    
+    .news-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 5px;
+    height: 100%;
+    background-color: #333;
+    border-radius: 5px;
+    }
+    
+    .news-item h2 {
+    font-size: 30px;
     margin-bottom: 10px;
     color: #333;
-  }
-
-  .news-item p {
+    text-align: center;
+    }
+    
+    .news-item p {
     font-size: 16px;
-    color: #666;
-  }
+    color: #000000;
+    line-height: 1.5;
+    }
+    
+    .news-item a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    }
 
   .facebook-kontti {
     max-width: 500px;
