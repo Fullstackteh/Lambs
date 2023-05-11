@@ -26,7 +26,8 @@
 
                 <tr>
                     <td>Historia</td>
-                    <td><input type="text" name="historia" required value="<?php echo ($rivi['historia']); ?>"> </td>
+                    <td><textarea name="historia" style="width: 1000px; height: 500px;" required><?php echo ($rivi['historia']); ?></textarea></td>
+
                 </tr>
 
                
