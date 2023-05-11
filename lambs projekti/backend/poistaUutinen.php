@@ -8,5 +8,5 @@
         $poista->bindvalue('Id', $uutisetid, PDO::PARAM_STR);
         $poista->execute();
     }
-    header("location: historia.php")
+    header("location: uutiset.php")
 ?>
