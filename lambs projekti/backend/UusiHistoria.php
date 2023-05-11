@@ -16,7 +16,7 @@
             <form action="lisaaHistoria.php" method="POST">
                 <tr>
                     <td>Historia</td>
-                    <td><input type="text" name="historia" required></td>
+                    <td><textarea name="historia" required></textarea></td>
                 </tr>
                 
                     <td></td>
