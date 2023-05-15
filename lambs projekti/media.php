@@ -46,37 +46,47 @@
       </section> </div>
 
 
+      <div class="row">
+  <div class="col-xl-12">
     <div class="kuvat" id="images">
-       <?php 
-       $target_dir = "backend/kuvat/";
-       $valid_extensions = array("jpg", "jpeg", "png", "gif");
+      <?php
+      $target_dir = "backend/kuvat/";
+      $valid_extensions = array("jpg", "jpeg", "png", "gif");
 
-       $files = glob($target_dir . "*.{jpg,jpeg,png,gif}", GLOB_BRACE);
-       foreach ($files as $file) {
-          $filename = basename($file);
-          $imageFileType = strtolower(pathinfo($file, PATHINFO_EXTENSION));
-           if (in_array($imageFileType, $valid_extensions)) {
-           echo "<a href='$target_dir$filename'><img src='$target_dir$filename' width='200' height='200'></a>";
-          }
-         }
-       ?>
+      $files = glob($target_dir . "*.{jpg,jpeg,png,gif}", GLOB_BRACE);
+      foreach ($files as $file) {
+        $filename = basename($file);
+        $imageFileType = strtolower(pathinfo($file, PATHINFO_EXTENSION));
+        if (in_array($imageFileType, $valid_extensions)) {
+          echo "<a href='$target_dir$filename'><img src='$target_dir$filename' width='200' height='200'></a>";
+        }
+      }
+      ?>
     </div>
+  </div>
+</div>
  
       
-      <section class="iframe-section">
-      </div>
-      <div class="row">
-        <div class="col-xl-1 "></div>
-        <div class="col-xl-1 "></div>
-        <div class="col-xl-4 "> <p>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL437A552EBAAB6DA8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </p></div>
-        <div class="col-xl-4 "><p>
-          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/5J3AcDsarvqsLXoIOdc80i?utm_source=generator" width="560" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-      </p></div>
-        <div class="col-xl-1 "></div>
-        <div class="col-xl-1 "></div>
-      </section>
+
+    <section class="iframe-section">
+  <div class="row">
+    <div class="col-xl-1"></div>
+    <div class="col-xl-1"></div>
+    <div class="col-xl-4">
+      <p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL437A552EBAAB6DA8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </p>
+    </div>
+    <div class="col-xl-4">
+      <p>
+        <iframe style="border-radius: 12px" src="https://open.spotify.com/embed/artist/5J3AcDsarvqsLXoIOdc80i?utm_source=generator" width="560" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </p>
+    </div>
+    <div class="col-xl-1"></div>
+    <div class="col-xl-1"></div>
+  </div>
+</section>
+
       <footer class="footer bg-dark text-white">
         <div class="container">
           <div class="row">
