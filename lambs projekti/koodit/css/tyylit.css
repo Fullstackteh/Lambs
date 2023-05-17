@@ -5,6 +5,10 @@ body {
     color:#ffffff;
     display: flex;
     flex-direction: column;
+    background-image: url('../../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   header {
