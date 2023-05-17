@@ -349,10 +349,13 @@ body {
   filter: grayscale(0%);
 }
 .tuotanto {
-  background-color: #1c1c1c; 
+  background-color: rgba(28, 28, 28, 0.7); 
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
+  width: 112%; /* leveyden muokkaus */
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 
 .tuotanto h3 {
@@ -365,6 +368,8 @@ body {
   font-size: 20px;
   color: #ffffff;
   line-height: 1.6;
+  background-color: rgba(28, 28, 28, 0.7); 
+  
 }
 
 .tuotanto ul {
@@ -380,7 +385,6 @@ body {
 }
 
 .tuotanto li {
-  background-color: #1c1c1c;
   padding: 20px;
   border-radius: 5px;
   text-align: center;
@@ -398,11 +402,10 @@ body {
   grid-column: 1 / -1;
 }
 
-.tuotanto li:nth-child(odd) {
-  background-color:  #1c1c1c;
-}
+
 
 .tuotanto li h3 {
+  
   font-size: 24px;
   color: #ffffff;
   margin-bottom: 10px;
@@ -462,6 +465,9 @@ body {
   margin-top: 50px;
   margin-bottom: 5px;
   text-align: center;
+  width: 112%; /* leveyden muokkaus */
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 
 .keikkakalenterit {

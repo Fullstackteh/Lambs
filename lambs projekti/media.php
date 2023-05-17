@@ -26,7 +26,7 @@
         <a href="#"><img src="img/logo.jpg" alt="lambs"></a>
         <nav>
           <ul>
-            <li><a href="index.html">Front page</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="keikkakalenteri.html">Gigs</a></li>
             <li><a href="uutiset.html">News</a></li>
             <li><a href="media.php">Media</a></li>
