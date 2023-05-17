@@ -54,7 +54,7 @@ if (isset($_POST["delete"])) {
     <form action="" method="POST" enctype="multipart/form-data">
         Valitse kuva:
         <input type="file" name="fileToUpload" id="fileToUpload">
-        <input type='submit' value='Lataa kuva' name='submit' class="btn btn-primary">
+        <input type='submit' value='Lataa kuva' name='submit' class="btn btn-success">
     </form>
 
     <h2>Kuvat</h2>
@@ -66,7 +66,7 @@ if (isset($_POST["delete"])) {
         echo "<img src='kuvat/$filename' width='200' height='200'>";
         echo "<form action='' method='POST'>";
         echo "<input type='hidden' name='filename' value='$filename'>";
-        echo "<input type='submit' value='Poista' name='delete' class='btn btn-primary'>";
+        echo "<input type='submit' value='Poista' name='delete' class='btn btn-danger'>";
         echo "</form>";
         echo "</div>";
     }

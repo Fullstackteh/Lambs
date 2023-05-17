@@ -12,7 +12,7 @@
         <br>
       <h1>Historia</h1>
       <h3>Kaikki historia</h3>
-      <p><a href="UusiHistoria.php" class="btn btn-primary">Lisää historia</a></p>
+      <p><a href="UusiHistoria.php" class="btn btn-success">Lisää historia</a></p>
 
 
       <table class="table table-striped">
@@ -38,8 +38,8 @@
                     <td> <?php echo $historia['Id']; ?> </td>
                     
 
-                    <td> <?php echo '<a href="muokkaaHistoria.php?Id='.$historia['Id'].'" class="btn btn-primary">Muokkaa</a>'; ?></td>
-                    <td> <?php echo '<a href="poistaHistoria.php?Id='.$historia['Id'].'" class="btn btn-primary">Poista</a>'; ?></td>
+                    <td> <?php echo '<a href="muokkaaHistoria.php?Id='.$historia['Id'].'" class="btn btn-dark">Muokkaa</a>'; ?></td>
+                    <td> <?php echo '<a href="poistaHistoria.php?Id='.$historia['Id'].'" class="btn btn-danger">Poista</a>'; ?></td>
                   </tr>
                   <?php
                 }

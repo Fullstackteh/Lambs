@@ -3,7 +3,8 @@
 
     include('config.php');
 
-    $kysely="SELECT uutisetID, otsikko, uutinen FROM uutisetID";
+    $kysely = "SELECT uutisetID, otsikko, uutinen, DATE_FORMAT(uutispvm, '%d.%m.%Y') AS uutispvm FROM uutisetID";
+
     $data = $yhteys->query($kysely);
 
     $JSON = '{"uutinen":[';
@@ -12,8 +13,7 @@
     while($rivi = $data->fetch(PDO::FETCH_ASSOC)){
         $laskuri++;
         $uutinen = str_replace(PHP_EOL, '<br>', $rivi['uutinen']);
-        $JSON .= '{"Id":"' . $rivi['uutisetID'] . '","Otsikko":"' . $rivi['otsikko'] . '","Uutinen":"' . $uutinen . '"}';
-
+        $JSON .= '{"Id":"' . $rivi['uutisetID'] . '","Otsikko":"' . $rivi['otsikko'] . '","Uutinen":"' . $uutinen . '","Uutispvm":"' . $rivi['uutispvm'] . '"}';
         if($laskuri<$riveja) $JSON.=",";
 
     }

@@ -12,7 +12,7 @@
         <br>
       <h1>Uutiset</h1>
       <h3>Kaikki uutiset</h3>
-      <p><a href="UusiUutinen.php" class="btn btn-primary">Lisää uutinen</a></p>
+      <p><a href="UusiUutinen.php" class="btn btn-success">Lisää uutinen</a></p>
 
 
       <table class="table table-striped">
@@ -20,8 +20,8 @@
           <tr>
              <th>Otsikko</th>
              <th>Uutinen</th>
+             <th>pvm</th>
              <th>ID</th>
-             <th></th>
              <th></th>
           </tr>
         </thead>
@@ -37,6 +37,7 @@
                   <tr>
                     <td> <?php echo $uutinen['Otsikko']; ?> </td>
                     <td> <?php echo $uutinen['Uutinen']; ?> </td>
+                    <td> <?php echo $uutinen['Uutispvm']; ?> </td>
                     <td> <?php echo $uutinen['Id']; ?> </td>
 
                     <td> <?php echo '<a href="muokkaaUutinen.php?Id='.$uutinen['Id'].'" class="btn btn-dark">Muokkaa</a>'; ?></td>

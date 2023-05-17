@@ -12,7 +12,7 @@
         <br>
       <h1>Keikat</h1>
       <h3>Kaikki keikat</h3>
-      <p><a href="uusikeikka.php" class="btn btn-primary">Lisää keikka</a></p>
+      <p><a href="uusikeikka.php" class="btn btn-success">Lisää keikka</a></p>
 
 
       <table class="table table-striped">
@@ -43,8 +43,8 @@
                     <td> <?php echo $keikka['Klo']; ?> </td>
                     <td> <?php echo $keikka['Id']; ?> </td>
 
-                    <td> <?php echo '<a href="muokkaakeikka.php?Id='.$keikka['Id'].'" class="btn btn-primary">Muokkaa</a>'; ?></td>
-                    <td> <?php echo '<a href="poistakeikka.php?Id='.$keikka['Id'].'" class="btn btn-primary">Poista</a>'; ?></td>
+                    <td> <?php echo '<a href="muokkaakeikka.php?Id='.$keikka['Id'].'" class="btn btn-dark">Muokkaa</a>'; ?></td>
+                    <td> <?php echo '<a href="poistakeikka.php?Id='.$keikka['Id'].'" class="btn btn-danger">Poista</a>'; ?></td>
                   </tr>
                   <?php
                 }
