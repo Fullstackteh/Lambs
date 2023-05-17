@@ -62,9 +62,12 @@
               const newsElement = document.createElement('div');
               newsElement.className = 'news-item'; // add class name here
               newsElement.innerHTML = `
-                <h2>${newsItem.Otsikko}</h2>
-                <p>${newsItem.Uutinen}</p>
-              `;
+              <div class="news-header">
+              <h2>${newsItem.Otsikko}</h2> 
+              <p>${newsItem.Uutispvm}</p>
+              </div>
+              <p>${newsItem.Uutinen}</p>`;
+
               newsContainer.appendChild(newsElement);
             }
           })
