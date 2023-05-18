@@ -336,7 +336,8 @@ body {
 }
 
 .historia{
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   margin: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -351,6 +352,18 @@ body {
   background-color: rgba(28, 28, 28, 0.7); 
   padding: 50px;
   text-align: center;
+}
+
+.historia p{
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.historia h1{
+  font-size: 42px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  text-shadow: 2px 2px 0 #000;
 }
 
 .kuvat {
