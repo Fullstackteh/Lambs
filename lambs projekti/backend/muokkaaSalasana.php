@@ -22,10 +22,17 @@
                     <td>Käyttäjätunnus</td>
                     
                     <td><input name="kayttajatunnus"  required></textarea></td>
+                    </tr>
+                    <tr>
                     <td>Salasana</td>
+                    
                     <td><input name="salasana" type="password" required></td>
+                        </tr>
+                        <tr>
                     <td>Uusi salasana</td>
                     <td><input name="uusisalasana" type="password" required></td>
+                            </tr>
+                            <tr>
                     <td>Uusi salasana uudelleen</td>
                     <td><input name="uusisalasana_uudelleen" type="password" required></td>
 
