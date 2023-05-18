@@ -381,7 +381,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 20px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 40px;
 }
 
@@ -393,6 +393,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-weight: bold;
 }
 
 .tuotanto .listaotsikko {
@@ -403,10 +404,7 @@ body {
   grid-column: 1 / -1;
 }
 
-
-
 .tuotanto li h3 {
-  
   font-size: 24px;
   color: #ffffff;
   margin-bottom: 10px;
@@ -431,6 +429,14 @@ body {
 
 .tuotanto .btn:hover {
   background-color: #666;
+}
+
+.albumi{
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  object-fit: cover;
+  
 }
 
 .linkki {
@@ -527,9 +533,4 @@ header img:hover span {
   justify-content: space-between;
 }
 
-.albumi{
-  width: 200px;
-  height: 200px;
-  padding: 5px;
-  object-fit: cover;
-}
+
