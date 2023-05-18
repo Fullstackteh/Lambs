@@ -320,6 +320,34 @@ body {
   text-align: center;
   margin-bottom: 5px;
 }
+
+#history-container{
+  max-width: 1000px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.historia{
+  width: 800px;
+  margin: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 25px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+  background-color: rgba(28, 28, 28, 0.7); 
+  padding: 50px;
+  text-align: center;
+}
+
 .kuvat {
   display: flex;
   flex-wrap: wrap;
@@ -436,7 +464,11 @@ body {
   height: 200px;
   padding: 5px;
   object-fit: cover;
-  
+}
+.discotsikko{
+margin: 0;
+color: #fff;
+text-shadow: 2px 2px 0 #000;
 }
 
 .linkki {
