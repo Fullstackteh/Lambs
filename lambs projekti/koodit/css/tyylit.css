@@ -178,21 +178,25 @@ body {
   .iframe-section {
     position: relative;
     z-index: 1;
+    overflow: hidden; /* Add overflow: hidden to the section */
   }
   
   .iframe-wrapper {
     max-width: 960px;
     margin: 0 auto;
+    overflow: auto;
   }
   
   .iframe-wrapper p {
     margin: 0;
     text-align: center;
   }
-  .iframe{
+  
+  .iframe {
     margin: 0;
     text-align: center;
   }
+  
 
   #news-container {
     max-width: 800px;
