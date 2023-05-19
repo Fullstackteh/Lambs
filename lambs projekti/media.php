@@ -23,7 +23,7 @@
 
 <body>
     <header>
-        <a href="#"><img src="img/logo.jpg" alt="lambs"></a>
+        <a href="#"><img width="400px" src="img/logo.jpg" alt="lambs"></a>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
