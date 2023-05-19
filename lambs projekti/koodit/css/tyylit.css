@@ -514,10 +514,22 @@ text-shadow: 2px 2px 0 #000;
   margin: 0 auto;
   margin-top: -50px;
   margin-bottom: 50px;
-  max-width: 100%;
+  max-width: 112%;
   height: auto;
-  border-radius: 50%;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  align-items: center;
+  padding-left: 75px;
+  filter: grayscale(100%);
+}
+@media (max-width: 767px) {
+  .bandi-kuva {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 10px;
+    filter: none;
+    filter: grayscale(100%);
+    
+  }
 }
 
 .tietoa {
